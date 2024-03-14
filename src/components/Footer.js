@@ -4,7 +4,7 @@ import Logo from "../assets/company_logo.png";
 
 export const Footer = () => {
   return (
-    <footer className="bg-white shadow dark:bg-gray-900 ">
+    <footer className="border-t-2  dark:bg-gray-900 ">
       <div className="w-1/2 mx-auto p-4 md:py-8">
         <div className="sm:flex sm:items-center sm:justify-between">
           <Link
