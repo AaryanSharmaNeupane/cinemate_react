@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import Logo from "../assets/company_logo.png";
 
 export const Header = () => {
   const [darkMode, setDarkMode] = useState(
     localStorage.getItem("darkMode") || false
   );
-
+  const navigate = useNavigate();
   useEffect(() => {
     localStorage.setItem("darkMode", darkMode);
     if (darkMode) {
@@ -19,8 +19,15 @@ export const Header = () => {
   const activeClass =
     "text-lg font-medium  border rounded-lg shadow p-3 bg-slate-700 text-white dark:bg-slate-100 dark:text-black";
   const inactiveClass = "text-lg font-medium dark:text-white";
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    const queryTerm = event.target.search.value;
+    event.target.reset();
+    return navigate(`/search?q=${queryTerm}`);
+  };
   return (
-    <header className=" border-b-2   dark:bg-gray-900 ">
+    <header className="border-b-2   dark:bg-gray-900  ">
       <div className="flex p-3 items-center justify-between">
         <div className="flex items-center cursor-pointer">
           <img className="w-12 " src={Logo} alt="Company logo" />
@@ -84,15 +91,17 @@ export const Header = () => {
               <i className="bi bi-moon-fill"></i>
             )}
           </button>
-          <div className="border p-2 rounded-lg bg-white hover:border-slate-500 focus-within:border-slate-500  dark:bg-white dark:hover:border-slate-900">
+          <div className="flex border p-2 rounded-lg bg-white hover:border-slate-500 focus-within:border-slate-500  dark:bg-white dark:hover:border-slate-900">
             <i className="bi bi-search "></i>
-            <input
-              className=" outline-none ml-2 "
-              placeholder=" Search..."
-              autoComplete="off"
-              name="search"
-              type="text"
-            />
+            <form onSubmit={handleSubmit}>
+              <input
+                className=" outline-none ml-2  "
+                placeholder=" Search..."
+                autoComplete="off"
+                name="search"
+                type="text"
+              />
+            </form>
           </div>
         </div>
       </div>
