@@ -8,9 +8,10 @@ export const useFetch = (apiPath, queryTerm = "") => {
     async function fetchMovies() {
       const response = await fetch(url);
       const json = await response.json();
-      setData(json.results);
+      setData(json.results || json);
     }
     fetchMovies();
   }, [url]);
+
   return { data };
 };

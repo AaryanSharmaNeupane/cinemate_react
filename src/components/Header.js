@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { NavLink, useNavigate } from "react-router-dom";
+import { Link, NavLink, useNavigate } from "react-router-dom";
 import Logo from "../assets/company_logo.png";
 
 export const Header = () => {
@@ -29,12 +29,15 @@ export const Header = () => {
   return (
     <header className="border-b-2   dark:bg-gray-900  ">
       <div className="flex p-3 items-center justify-between">
-        <div className="flex items-center cursor-pointer">
-          <img className="w-12 " src={Logo} alt="Company logo" />
-          <h1 className="text-3xl ml-2 font-semibold dark:text-white">
-            Cinemate
-          </h1>
-        </div>
+        <Link to="/">
+          <div className="flex items-center cursor-pointer">
+            <img className="w-12 " src={Logo} alt="Company logo" />
+            <h1 className="text-3xl ml-2 font-semibold dark:text-white">
+              Cinemate
+            </h1>
+          </div>
+        </Link>
+
         <nav className="w-1/3 h-6">
           <ul className="flex justify-between items-center ">
             <li>
