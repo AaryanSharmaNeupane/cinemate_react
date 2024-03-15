@@ -4,7 +4,7 @@ import Logo from "../assets/company_logo.png";
 
 export const Header = () => {
   const [darkMode, setDarkMode] = useState(
-    localStorage.getItem("darkMode") || true
+    localStorage.getItem("darkMode") || false
   );
 
   useEffect(() => {
@@ -17,7 +17,7 @@ export const Header = () => {
   }, [darkMode]);
 
   const activeClass =
-    "text-lg font-medium  border rounded-lg shadow p-3 bg-white dark:bg-slate-100 ";
+    "text-lg font-medium  border rounded-lg shadow p-3 bg-slate-700 text-white dark:bg-slate-100 dark:text-black";
   const inactiveClass = "text-lg font-medium dark:text-white";
   return (
     <header className=" border-b-2   dark:bg-gray-900 ">
