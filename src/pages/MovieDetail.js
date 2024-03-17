@@ -12,19 +12,24 @@ export const MovieDetail = () => {
 
   return (
     <main>
-      <section className="flex flex-arap justify-around py-5   dark:text-white">
-        <div className="max-w-sm">
-          <img className="rounded" src={image} alt="movie poster" />
+      <section className="flex flex-wrap justify-around py-10   dark:text-white">
+        <div className="max-w-sm ">
+          <img className="rounded-lg" src={image} alt="movie poster" />
         </div>
         <div className="max-w-2xl text-lg">
           <h1 className="text-3xl font-bold mb-5">{data.original_title}</h1>
           <p className="mb-8">{data.overview}</p>
-          <div className="flex justify-around mb-10">
-            {/* {data.genres.map((g) => (
-              <h1 className="border p-3 rounded-full border-slate-500 bg-slate-500 cursor-pointer ">
-                {g.name}
-              </h1>
-            ))} */}
+          <div className="flex justify-start mb-10">
+            {!data.genres
+              ? ""
+              : data.genres.map((g) => (
+                  <p
+                    key={g.id}
+                    className="border p-3 rounded-lg border-slate-500 bg-slate-500 cursor-pointer mr-3"
+                  >
+                    {g.name}
+                  </p>
+                ))}
           </div>
           <div className="flex ">
             <i className="bi bi-star-half text-yellow-400"></i>
@@ -32,11 +37,10 @@ export const MovieDetail = () => {
             <p className="ml-2"> &</p>
             <span className="ml-2 flex">
               <p className="font-bold">{data.vote_count}</p>
-
               <p className="ml-1">reviews</p>
             </span>
           </div>
-          <div>
+          <div className="mt-3 mr-3">
             <span className="flex ">
               <p className="font-bold">Runtime:</p>
               <p className="ml-2">{data.runtime}min.</p>
@@ -63,8 +67,6 @@ export const MovieDetail = () => {
                 {data.imdb_id}
               </a>
             </span>
-            <p></p>
-            <p></p>
           </div>
         </div>
       </section>

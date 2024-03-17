@@ -9,7 +9,7 @@ export const Card = ({ movie }) => {
     : Backup_img;
   return (
     <div className="max-w-sm border border-gray-200 shadow rounded-2xl m-4">
-      <Link to={`movie/${id}`}>
+      <Link to={`/movie/${id}`}>
         <img
           className="rounded-t-2xl
         "
@@ -18,7 +18,7 @@ export const Card = ({ movie }) => {
         />
       </Link>
       <div className="p-5">
-        <Link to={`movie/${id}`}>
+        <Link to={`/movie/${id}`}>
           <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
             {original_title}
           </h5>
