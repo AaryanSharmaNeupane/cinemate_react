@@ -1,8 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import NotFoundImage from "../assets/images/pagenotfound.png";
+import { useTitle } from "../hooks/useTitle";
 
-export const PageNotFound = () => {
+export const PageNotFound = ({ title }) => {
+  useTitle(title);
   return (
     <main>
       <section className="pt-5 m-auto max-w-7xl flex flex-col ">

@@ -2,6 +2,7 @@ import React from "react";
 import { useParams } from "react-router-dom";
 import { useFetch } from "../hooks/useFetch";
 import Backup_img from "../assets/images/backup.png";
+import { useTitle } from "../hooks/useTitle";
 
 export const MovieDetail = () => {
   const params = useParams({});
@@ -9,7 +10,7 @@ export const MovieDetail = () => {
   const image = data.poster_path
     ? `https://image.tmdb.org/t/p/w500${data.poster_path}`
     : Backup_img;
-
+  useTitle(data.original_title);
   return (
     <main>
       <section className="flex flex-wrap justify-around py-10   dark:text-white">
