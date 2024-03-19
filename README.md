@@ -1,70 +1,31 @@
-# Getting Started with Create React App
+# Cinemate
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Cinemate is your ultimate destination for staying up-to-date with the latest in the world of movies. Whether you're looking for information on upcoming releases, exploring the top-rated films, or digging into the details of your favorite movies, Cinemate has got you covered. With features like search functionality, IMDb ratings, budget details, reviews, revenue, and more, Cinemate is your one-stop-shop for all things cinema.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **Upcoming Movies:** Stay informed about the most anticipated releases in the movie industry.
+- **Top Rated Movies:** Explore a curated list of the highest-rated films by critics and audiences alike.
+- **New Releases:** Keep track of the latest movies hitting the theaters or streaming platforms.
+- **Search Functionality:** Easily search for any movie to view its IMDb rating, budget, reviews, revenue, and more.
+- **Comprehensive Information:** Get detailed insights into various aspects of movies, including critical reception, financial performance, and audience reactions.
 
-### `npm start`
+## How to Use
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. **Homepage:** Upon visiting Cinemate, you'll be greeted with a user-friendly homepage showcasing the latest updates and featured movies.
+2. **Navigation:** Use the navigation menu to explore different sections of the website, such as Upcoming Movies, Top Rated Movies, and New Releases.
+3. **Search:** Utilize the search bar to find specific movies by title or keyword.
+4. **Movie Details:** Click on a movie to access comprehensive information, including IMDb rating, budget, reviews, revenue, and more.
+5. **Stay Updated:** Check back regularly for fresh content and updates on the cinematic landscape.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Technologies Used
 
-### `npm test`
+Cinemate is built using cutting-edge technologies to ensure a seamless user experience:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Frontend:** HTML5, CSS3, JavaScript, React
+- **API Integration:**  TMDb API
 
-### `npm run build`
+![1](https://github.com/AaryanSharmaNeupane/cinemate_react/assets/63339028/55678090-ed5b-45dc-b1c7-9da25f5986a8)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![2](https://github.com/AaryanSharmaNeupane/cinemate_react/assets/63339028/3e84d178-09df-46f0-b8c4-9db382bbfa45)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
